@@ -1,0 +1,44 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+}
+.navbar-default{
+    background-color:#fff;
+}
+
+#n-primary {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 100px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#n-primary a:hover {
+    color: #4fc9de;
+}
+
+#n-primary a.active {
+    color: #4fc9de;
+    cursor: default;
+}
+
+#search{
+    margin-left: 300px;
+    float: right;
+}
+
+footer{
+    position: fixed;
+}
