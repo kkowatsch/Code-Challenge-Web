@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">    
 
         <title> web dev challenge </title>
 
@@ -29,7 +32,7 @@
             a{
                 color:#000;
             }
-            span {
+            #s-tag span {
                 display: inline-block;
                 width: 300px;
                 margin-top:20px;
@@ -42,7 +45,8 @@
                 font-family: 'Oswald', sans-serif;
             }
             #content{
-                width: 1100px;
+                width: 100%;
+                height: auto;
                 margin: 0 auto;
             }
             .footer{
@@ -118,40 +122,35 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
             </div> <!-- Carousel -->
-            <div class="slider">
-                <span>
-                    <h1>May 20,2015</h1>
-                    <h4 style="margin: 35px 0 20px;"> Corporate Announcement</h4>
+            <div id="s-tag">
+                <span>Stories from Us</span>
+            </div>
+            <div class="container-fluid">
+                <div class="col-md-4">
+                    <p>May 20,2015</p>
+                    <h2> Corporate Announcement</h2>
                     <img src="http://lorempixel.com/400/200/sports" />
                     <p> Lorem Ipsum</p>
                     <a href="#">Read More</a>
-                </span>
-                <span>
+                </div>
+                <div class="col-md-4">
                     <p>May 20,2015</p>
                     <h2> Corporate Announcement</h2>
                     <img src="http://lorempixel.com/400/200/cats" />
                     <p> Lorem Ipsum</p>
                     <a href="#">Read More</a>
-                </span>
-                <span>
+                </div>
+                <div class="col-md-4">
                     <p>May 20,2015</p>
                     <h2> Corporate Announcement</h2>
-                    <img src="http://lorempixel.com/400/200/transport" > </img>
+                    <img src="http://lorempixel.com/400/200/transport" />
                     <p> Lorem Ipsum</p>
                     <a href="#">Read More</a>
-                </span>
+                </div>
                 <p> &nbsp; </p>
                 <br />
-            </div><!--Carousel-->
+            </div>
         </div><!--Content-->
         <div class="footer">
             <p> Copyright 2016 </p>
