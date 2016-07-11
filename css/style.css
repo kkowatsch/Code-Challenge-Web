@@ -3,18 +3,42 @@ body {
     margin: 0 auto;
     width: 100%;
 }
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust:     100%;
+}
 html,
 body {
     margin:0;
     padding:0;
     height:100%;
+    font-size: 85%;
 }
+/*// Large devices (desktops, 62em and up)*/
+@media (min-width: 62em) { 
+    html,
+    body {
+        font-size: 95%;
+    }
+}
+/*// Extra large devices (large desktops, 75em and up)*/
+@media (min-width: 75em) { 
+    html,
+    body {
+        font-size: 100%;
+    }
+}
+
 p{
     text-align: center;
 }
 img{
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    height: auto;
 }
 a:hover {
     color: #4fc9de;
@@ -36,8 +60,8 @@ a:hover {
 
 #n-primary {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin-left: 4%;
+    padding: 0.25em;
     overflow: hidden;
 }
 
@@ -61,17 +85,52 @@ li a {
     cursor: default;
 }
 
-.navbar-form{
-    float: right;
+/*// Small devices (landscape phones, 374px and up)*/
+@media (min-width: 34em) {
+    #n-primary {
+        margin-left: 5%;
+        position: relative;
+        display: inline;
+        padding: 0;
+        overflow: hidden;
+    }
 }
-
-#s-tag{
-    font-size: 2.25em;
-    text-align: center;
+/*// Medium devices (Tablets, 767px and up)*/
+@media screen and (min-width: 48em){
+    li a{
+        margin: 0;
+    }
 }
 
 #content {
     padding-bottom:60px;   /* Height of the footer */
+    margin-top: 30px;
+}
+#s-tag{
+    font-size: 2.5em;
+    text-align: center;
+}
+#s-tag span {
+    display: inline-block;
+    width: 300px;
+    margin-top:20px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    margin-right:0;
+    overflow: hidden;
+}
+@media screen and (max-width: 34em){
+    .carousel-caption h1, .carousel-caption h3{
+    font-size: 1.5em;
+    margin: 0;
+}
+}
+
+/*// Medium devices (Tablets, 767px and up)*/
+@media screen and (min-width: 48em){
+    .carousel .item{
+        max-height: 300px;
+    }
 }
 
 #slider p{
@@ -81,9 +140,24 @@ li a {
     border-radius: 2px;
 }
 
-#read{
+.read{
     padding: 0 !important;
     margin: 0 !important;
+}
+.col-md-4{
+    margin-bottom: 25px;
+    border-bottom: #0e0342 2px solid;
+}
+
+/*// Large devices (desktops, 62em and up)*/
+@media (min-width: 62em) { 
+    .read{
+        color: #333;
+    }
+    .col-md-4{
+        margin-bottom: 25px;
+        border-bottom: none;
+    }
 }
 
 #footer {
@@ -100,4 +174,23 @@ li a {
     float: left;
     margin: 15px;
     margin-left: 50px;
+}
+/*// Extra small devices (portrait phones, less than 34em)*/
+/*// No media query since this is the default in Bootstrap*/
+
+/*// Small devices (landscape phones, 34em and up)*/
+@media (min-width: 34em) {
+
+}
+
+/*// Medium devices (tablets, 48em and up)*/
+@media (min-width: 48em) { 
+}
+
+/*// Large devices (desktops, 62em and up)*/
+@media (min-width: 62em) { 
+}
+
+/*// Extra large devices (large desktops, 75em and up)*/
+@media (min-width: 75em) { 
 }
