@@ -1,5 +1,5 @@
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Oswald', sans-serif;
     margin: 0 auto;
     width: 100%;
 }
@@ -35,6 +35,24 @@ body {
 
 p{
     text-align: center;
+}
+
+h1{
+    font-size: 3em;
+    line-height: 12px;
+    font-weight:normal;
+}
+h2{
+    text-align: center;
+    margin: 0 10px 30px;
+
+}
+h4{
+    font-size:12px;
+    text-align: center;
+}
+body {
+
 }
 img{
     width: 100%;
@@ -119,13 +137,43 @@ li a {
     margin-right:0;
     overflow: hidden;
 }
-@media screen and (max-width: 34em){
-    .carousel-caption h1, .carousel-caption h3{
-    font-size: 1.5em;
-    margin: 0;
-}
+
+.carousel{
+    border-bottom: 4px solid #0e0342;
 }
 
+.carousel-caption h1, .carousel-caption h3{
+    font-family: 'Open Sans', sans-serif;
+}
+.carousel-caption h1{
+    z-index: 20;
+    color: #0086ff;
+    text-shadow: 3px 3px 4px rgba(28,8,8,1);
+    -webkit-background-clip: text;
+    position: relative;
+    margin-right: 2%;
+}
+.carousel-indicators{
+    width: 15%;
+    margin-left: -2%;
+}
+.carousel .item{
+    background: rgba(0,0,0,.5);
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+@media screen and (max-width: 34em){
+    .carousel-caption h1{
+        font-size: 2em;
+        line-height: 25px;
+        margin-bottom: -15px;
+    }
+     .carousel-caption h3{
+        font-size: 1.5em;
+        margin-bottom: -5px;
+        margin-top: 0;
+    }
+}
 /*// Medium devices (Tablets, 767px and up)*/
 @media screen and (min-width: 48em){
     .carousel .item{
@@ -164,16 +212,15 @@ li a {
     position:absolute;
     bottom:0;
     width:100%;
-    height:50px;   /* Height of the footer */
+    height:60px;   /* Height of the footer */
     background-color: #333333;
     color: #FFF;
+    display: inline-block;
 }
 
 #footer p{
-    text-align: center;
-    float: left;
+    text-align: left;
     margin: 15px;
-    margin-left: 50px;
 }
 /*// Extra small devices (portrait phones, less than 34em)*/
 /*// No media query since this is the default in Bootstrap*/
@@ -185,6 +232,14 @@ li a {
 
 /*// Medium devices (tablets, 48em and up)*/
 @media (min-width: 48em) { 
+    .foot_col1{
+        margin-left: 0;
+    }
+    .foot_col2{
+        float: right;
+        width: 40%;
+        margin: 0;
+    }
 }
 
 /*// Large devices (desktops, 62em and up)*/
