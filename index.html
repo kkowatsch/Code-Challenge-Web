@@ -13,41 +13,8 @@
         <!-- Latest compiled and minified CSS -->
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
 
-        <!--Animate.css-->
-        <link href='css/animate.css' rel='stylesheet' type='text/css'>
-
         <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
         <link href='css/style.css' rel='stylesheet' type='text/css'>
-
-        <style>
-            h1{
-                font-size: 3em;
-                line-height: 12px;
-                font-weight:normal;
-            }
-            h2{
-                text-align: center;
-                margin: 0 10px 30px;
-
-            }
-            h4{
-                font-size:12px;
-                text-align: center;
-            }
-            li {
-                display: inline-block;
-                text-align: left;
-            }
-            body {
-                font-family: 'Oswald', sans-serif;
-            }
-            .footer{
-                background:#000;
-                color:#FFFFFF;
-                text-align:center;
-            }
-
-        </style>
     </head>
     <body>
         <div id="wrapper">
@@ -104,24 +71,16 @@
                     <div class="carousel-inner">
                         <div class="item active">
                             <img src="http://lorempixel.com/1200/500/sports" alt="...">
-                            <div class="carousel-caption">
-                                <h1>Welcome to the Community</h1></br>
-                                <h3>Share, connect and collaborate.</h3>
-                            </div>
                         </div>
                         <div class="item">
                             <img src="http://lorempixel.com/1200/500/nightlife" alt="...">
-                            <div class="carousel-caption">
-                                <h1>Welcome to the Community</h1></br>
-                                <h3>Share, connect and collaborate.</h3>
-                            </div>
                         </div>
                         <div class="item">
                             <img src="http://lorempixel.com/1200/500/cats" alt="...">
-                            <div class="carousel-caption">
-                                <h1>Welcome to the Community</h1></br>
-                                <h3>Share, connect and collaborate.</h3>
-                            </div>
+                        </div>
+                        <div class="carousel-caption">
+                            <h1>Welcome to the Community</h1></br>
+                            <h3>Share, connect and collaborate.</h3>
                         </div>
                     </div>
                     <!-- Controls -->
@@ -224,13 +183,18 @@
                     </div>
                 </div>
             </div><!--Content-->
-            <div id ="footer">
-                <p> Copyright 2016 </p>
+            <div id ="footer" class="container">
+                <div class="foot_col1 col-md-6" style="float:left;"><p> &copy; 
+                        <span id="copyright">
+                            <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                        </span>
+                    </p>
+                </div>
+                <div class="foot_col2 col-md-6">
+                    <img src="img/igloo.png" alt="Igloo Logo" style=" float: right;margin-top:12px; width: 20%; height: auto;"/>
+                </div>
             </div>
         </div>
-
-        <!--Custom Javascript-->
-        <script src="js/main.js"></script>
 
         <!--Jquery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
